@@ -5,5 +5,5 @@ export interface _SERVICE {
   'checkBalance' : ActorMethod<[], number>,
   'compound' : ActorMethod<[], undefined>,
   'topUp' : ActorMethod<[number], undefined>,
-  'withdrawl' : ActorMethod<[number], undefined>,
+  'withdraw' : ActorMethod<[number], undefined>,
 }
