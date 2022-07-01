@@ -4,12 +4,13 @@ import Float "mo:base/Float";
 
 actor DBank {
   stable var currentValue: Float = 300;
-  //currentValue :=300;
+  currentValue :=300;
+  Debug.print(debug_show(currentValue));
 
   // let id = 34567567;
 
   stable var startTime = Time.now();
-  //startTime := Time.now();
+  startTime := Time.now();
   Debug.print(debug_show(startTime));
 
   // Debug.print(debug_show(id));
@@ -19,7 +20,7 @@ actor DBank {
     Debug.print(debug_show(currentValue));
   };
 
-  public func withdrawl(amount: Float) {
+  public func withdraw(amount: Float) {
 
     let temp: Float = currentValue - amount;
     if (temp>= 0) {
